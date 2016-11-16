@@ -191,7 +191,7 @@ var imperial = {
 				info: "placeholder text",
 				correct: false}]
 		} /*gallon*/
-	} /*volume*/
+	}, /*volume*/
 	mass: {
 		ounce: {
 			unit: "Ounce",
