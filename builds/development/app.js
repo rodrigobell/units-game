@@ -1,7 +1,8 @@
 var express = require('express');
-var app = express();
+var app = module.exports.app = exports.app = express();
 
 app.set('port', process.env.PORT || 3000);
+app.use(require('connect-livereload')());
 app.use(express.static('builds/development/'));
 
 app.get('/', function(req, res) {
