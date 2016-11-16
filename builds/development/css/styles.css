@@ -4,7 +4,6 @@ body { --colorThemeMid: rgb(162,125,185); }
 body { --colorThemeML: rgb(200,180,210); }
 body { --colorThemeLight: rgb(216,215,224); }
 body { --colorBackground: rgb(35,35,35); }
-
 body { --fontTitle: 'Montserrat Subrayada', sans-serif; }
 body { --fontAll: 'Merriweather Sans', sans-serif; }
 
@@ -170,11 +169,6 @@ footer {
 	text-align: center;
 }
 
-#systemsSpacer {
-	display: inline-block;
-	width: 27%;
-}
-
 #propertiesStripe {
 	background: var(--colorThemeMid);
 	height: 28px;
@@ -203,7 +197,7 @@ footer {
 	border-radius: 4px 4px 0 0;
 }
 
-#propertiesSpacer {
+.spacer {
 	display: inline-block;
 	width: 19%;
 }
