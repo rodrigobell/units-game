@@ -2,9 +2,9 @@
   "name": "unitsgame",
   "version": "1.0.0",
   "description": "",
-  "main": "app/app.js",
+  "main": "builds/development/app.js",
   "scripts": {
-    "start": ""
+    "start": "node builds/development/app.js"
   },
   "author": "Rodrigo Bell",
   "license": "ISC",

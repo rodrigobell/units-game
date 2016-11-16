@@ -1,5 +1,3 @@
-console.log("test");
-
 var impLength 	= [inch, foot, yard, mile]; 
 var impVolume	= [fluidOunce, cup, pint, quart, gallon];
 var impMass		= [ounce, pound, ton];
@@ -64,7 +62,6 @@ function randPrompt() {
 }
 
 function setupData() {
-	console.log("setupData called");
 	// Update units displayed in prompt.
 	$("#unit").text(property[curPrompt].unit);
 	$("#article").text(property[curPrompt].article);
@@ -178,4 +175,3 @@ function shuffle(arr) {
 		arr[j] = x;
 	}
 }
-
