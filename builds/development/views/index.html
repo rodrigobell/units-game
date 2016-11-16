@@ -1,0 +1,93 @@
+ <!doctype html>
+<html>
+<head>
+	<title>The Measure of Things</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Montserrat+Subrayada" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrap">
+	<h1>The Measure of Things</h1>
+
+	<div id="stripes">
+		<div id="systemsStripe">
+			<button id="imperial" class="tab system selected"><i class="fa fa-empire" aria-hidden="true"></i> Imperial</button>
+			<button id="metric" class="tab system"><i class="fa fa-globe" aria-hidden="true"></i> Metric</button>
+			<span id="systemsSpacer"></span>
+			<button id="next" class="tab">Next Question</button>
+		</div>
+
+		<div id="propertiesStripe">
+			<button id="length" class="tab property selected"><i class="fa fa-arrows-h" aria-hidden="true"></i> Length</button>
+			<button id="volume" class="tab property"><i class="fa fa-cube" aria-hidden="true"></i> Volume</button>
+			<button id="mass" class="tab property"><i class="fa fa-rocket" aria-hidden="true"></i> Mass</button>
+ 			<span id="divider">|</span>
+			<button id="time" class="tab property"><i class="fa fa-clock-o" aria-hidden="true"></i> Time</button>
+			<span id="propertiesSpacer"></span>
+		</div>
+
+		<div id="promptStripe">
+			<p id="prompt">Which of the following is closest in <span id="property">property</span> to <span id="article">a</span> <span id="unit">Unit</span>?</p>
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="square hover">
+			<div class="image">
+				<div class="overlay">
+					<p class="info">info</p>
+				</div>
+			</div>
+			<div class="captionBox">
+				<p class="caption">caption</p>
+			</div>
+		</div>
+
+		<div class="square hover">
+			<div class="image">
+				<div class="overlay">
+					<p class="info">info</p>
+				</div>
+			</div>
+			<div class="captionBox">
+				<p class="caption">caption</p>
+			</div>
+		</div>
+
+		<div class="square hover">
+			<div class="image">
+				<div class="overlay">
+					<p class="info">info</p>
+				</div>
+			</div>
+			<div class="captionBox">
+				<p class="caption">caption</p>
+			</div>
+		</div>
+
+		<div class="square hover">
+			<div class="image">
+				<div class="overlay">
+					<p class="info">info</p>
+				</div>
+			</div>
+			<div class="captionBox">
+				<p class="caption">caption</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p id="about">About</p>
+		<p id="conversions">Conversions</p>
+		<a id="contact" href="contact.html">Contact</a>
+	</footer>
+</div>
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+{
+  "name": "unitsgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "Rodrigo Bell",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {}
+}
