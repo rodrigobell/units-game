@@ -1,28 +1,11 @@
-var impLength 	= [inch, foot, yard, mile]; 
-var impVolume	= [fluidOunce, cup, pint, quart, gallon];
-var impMass		= [ounce, pound, ton];
-var metLength	= [millimeter, centimeter, meter, kilometer];
-var metVolume	= [milliliter, liter, cubicCentimeter, cubicMeter];
-var metMass		= [milligram, gram, kilogram];
-var time 		= [second, minute, hour, day, year];
-
-var imperial 	= [impLength, impVolume, impMass];
-var metric		= [metLength, metVolume, metMass];
-
-var systems		= [imperial, metric];
-
-// Values preloaded to display imperial length prompt.
-var numSquare 	= 4;
+var squareCount = 4;
 var system		= imperial;
-var pIndex		= 0;
-var property 	= system[pIndex];
-var numProp		= property.length;
-var curPrompt 	= Math.floor((Math.random() * numProp))
-var i, j, prevPrompt1, prevPromt2;
-var data 		= property[curPrompt].data;
+var property 	= imperial.length;
+var data 		= imperial.length[0];
+var uCount		= imperial.length.length;	// Length of length array defined in data.js file
+var uCur 		= Math.floor((Math.random() * uCount))
+var i, j, k, uPrev, uPrevPrev;
 
-var sButtons	= $("#imperial, #metric");
-var pButtons 	= $("#length, #volume, #mass, #time");
 var squares		= $(".square");
 var images 		= $(".image");
 var overlays 	= $(".overlay");
@@ -33,15 +16,8 @@ init();
 
 function init() {
 	newPrompt();
-	setupNextButton();
-
-	for (i = 0; i < sButtons.length; i++)
-		setupSystButton(sButtons[i], systems[i]);
-
-	for (j = 0; j < pButtons.length -1; j++)
-		setupPropButton(pButtons[j], j);
-
-	setupPropButton(pButtons[3], 3);
+	setupNextBtn();
+	setupPBtns();
 }
 
 function newPrompt() {
@@ -53,27 +29,28 @@ function newPrompt() {
 	setupEffects();
 }
 
-// Ensure curPrompt is neither of last two questions.
+// Ensure uCur is neither of previous two units
 function randPrompt() {
-	prevPromt2 = prevPrompt1; 
-	prevPrompt1 = curPrompt;
-	while (curPrompt == prevPrompt1 || curPrompt == prevPromt2)
-		curPrompt = Math.floor((Math.random() * numProp));
+	uCount = property.length;
+	uPrevPrev = uPrev; 
+	uPrev = uCur;
+	while (uCur == uPrev || uCur == uPrevPrev)
+		uCur = Math.floor((Math.random() * uCount));
 }
 
 function setupData() {
 	// Update units displayed in prompt.
-	$("#unit").text(property[curPrompt].unit);
-	$("#article").text(property[curPrompt].article);
+	$("#unit").text(property[uCur].unit);
+	$("#article").text(property[uCur].article);
 
-	data = property[curPrompt].data;
-	for (i = 0; i < numSquare; i++) {
+	data = property[uCur].data;
+	for (i = 0; i < squareCount; i++) {
 		// Setup images and captions for each square.
 		$(images[i]).css('background-image', 'url(' + data[i].imgUrl + ')');
 		$(captions[i]).text(data[i].caption);
 		// Setup correct or incorrect info for each square.
 		if (data[i].correct)
-			$(overlays[i]).css("background-image", "url(images/other/checkmark.png)");
+			$(overlays[i]).css("background-image", "url(images/misc/checkmark.png)");
 		else
 			$(infos[i]).html(data[i].info);
 	}
@@ -81,15 +58,15 @@ function setupData() {
 
 function resetData() {
 	// Reset overlay info so it can be used for next prompt.
-	for (i = 0; i < numSquare; i++) {
+	for (i = 0; i < squareCount; i++) {
 		$(overlays[i]).css("background-image", "");
 		$(infos[i]).html("");
 	}
 }
 
-// Effects when a square is clicked.
+// Effects when a square is clicked
 function setupEffects() {
-	for (i = 0; i < numSquare; i++) {
+	for (i = 0; i < squareCount; i++) {
 		if (data[i].correct) {
 			$(squares[i]).on("click", function() {
 				$(this).children(".image").children(".overlay").css("opacity", "1");
@@ -110,7 +87,7 @@ function setupEffects() {
 }
 
 function resetEffects() {
-	for (i = 0; i < numSquare; i++) {
+	for (i = 0; i < squareCount; i++) {
 		// Remove dim effect for images and overlays.
 		$(images[i]).css("background-color", "rgba(35,35,35,0)");
 		$(overlays[i]).css("opacity", "0");
@@ -123,46 +100,47 @@ function resetEffects() {
 	}
 }
 
-function setupNextButton() {
+function setupNextBtn() {
 	$("#next").click(function() {
 		newPrompt();
 	});
 }
 
-function setupSystButton(sButton, syst) {
-	$(sButton).click(function() {
-		if (pIndex == 3) {
-			system = syst;
-			$(this).addClass("selected");
-			$(this).siblings(".system").removeClass("selected");
-		} else {
-			system = syst;
-			property = system[pIndex];
-			numProp = property.length;
-			$(this).addClass("selected");
-			$(this).siblings(".system").removeClass("selected");
-			newPrompt();
-		}
-	});
-}
+// function setupSBtn(sBtn, syst) {
+// 	$(sBtn).click(function() {
+// 		if (uCur == 3) {
+// 			system = syst;
+// 			$(this).addClass("selected");
+// 			$(this).siblings(".system").removeClass("selected");
+// 		} else {
+// 			system = syst;
+// 			property = system[uCur];
+// 			uCount = property.length;
+// 			$(this).addClass("selected");
+// 			$(this).siblings(".system").removeClass("selected");
+// 			newPrompt();
+// 		}
+// 	});
+// }
 
-function setupPropButton(pButton, i) {
-	$(pButton).click(function() {
-		pIndex = i;
-		if (pIndex == 3) {
-			property = time;
-			numProp = property.length;
-			$(this).addClass("selected");
-			$(this).siblings(".property").removeClass("selected");
-			newPrompt();
-		} else {
-			pIndex = i;
-			property = system[pIndex];
-			numProp = property.length;
-			$(this).addClass("selected");
-			$(this).siblings(".property").removeClass("selected");
-			newPrompt();
-		}
+function setupPBtns() {
+	$("#length").click(function() {
+		property = imperial.length;
+		$(this).addClass("selected");
+		$(this).siblings(".property").removeClass("selected");
+		newPrompt();
+	});
+	$("#volume").click(function() {
+		property = imperial.volume;
+		$(this).addClass("selected");
+		$(this).siblings(".property").removeClass("selected");
+		newPrompt();
+	});
+	$("#mass").click(function() {
+		property = imperial.mass;
+		$(this).addClass("selected");
+		$(this).siblings(".property").removeClass("selected");
+		newPrompt();
 	});
 }
 
