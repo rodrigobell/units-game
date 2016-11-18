@@ -1,6 +1,5 @@
 var imperial = {
-	length: {
-		inch: {
+	length: [{
 			unit: "Inch",
 			article: "an",
 			data: [{
@@ -20,242 +19,231 @@ var imperial = {
 				caption: "Height of a business card", 
 				info: "2 inches",
 				correct: false}]
-		}, /*inch*/ 
-		foot: {
+		},{
 			unit: "Foot",
 			article: "an",
 			data: [{
-				imgUrl: "images/imperial/length/foot/shoe.jpg", 
+				imgUrl: "images/imperial/length/foot1.jpg", 
 				caption: "Men's 14 size shoe", 
 				info: "12 Inches",
 				correct: true},{
-				imgUrl: "images/imperial/length/foot/banana1.jpg", 
+				imgUrl: "images/imperial/length/foot2.jpg", 
 				caption: "Length of a banana", 
 				info: "7 to 8 Inches",
 				correct: false},{
-				imgUrl: "images/imperial/length/foot/soccer_ball.jpg", 
+				imgUrl: "images/imperial/length/foot3.jpg", 
 				caption: "Diameter of a soccer ball",  
 				info: "8.65 Inches",
 				correct: false},{
-				imgUrl: "images/imperial/length/foot/labrador1.jpg", 
+				imgUrl: "images/imperial/length/foot4.jpg", 
 				caption: "Height of a labrador",  
 				info: "22 to 24 Inches",
 				correct: false}]
-		}, /*foot*/
-		yard: {
+		},{
 			unit: "Yard",
 			article: "a",
 			data: [{
-				imgUrl: "images/imperial/length/yard/dollar.png", 
+				imgUrl: "images/imperial/length/yard1.jpg", 
 				caption: "Six one dollar bills side by side", 
 				info: "~1.02 Yards", 
 				correct: true}, {
-				imgUrl: "images/imperial/length/yard/billiards.jpg", 
+				imgUrl: "images/imperial/length/yard2.jpg", 
 				caption: "Width of a billiards table", 
 				info: "1.5 Yards", 
 				correct: false}, {
-				imgUrl: "images/imperial/length/yard/sedan.jpg", 
+				imgUrl: "images/imperial/length/yard3.jpg", 
 				caption: "Width of a mid-sized sedan", 
 				info: "~2 Yards", 
 				correct: false},{
-				imgUrl: "images/imperial/length/yard/woman.jpg", 
+				imgUrl: "images/imperial/length/yard4.jpg", 
 				caption: "Average woman's height", 
 				info: "~1.7 Yards <br> (or 5 ft 4 in)", 
 				correct: false}]
-		}, /*yard*/ 
-		mile: {
+		},{	
 			unit: "Mile",
 			article: "a",
 			data: [{
-				imgUrl: "images/imperial/length/mile/road.jpeg", 
+				imgUrl: "images/imperial/length/mile1.jpg", 
 				caption: "Distance travelled at 60 mph in a minute", 
 				info: "~1.08 Miles", 
 				correct: true},{
-				imgUrl: "images/imperial/length/mile/city_block.jpeg", 
+				imgUrl: "images/imperial/length/mile2.jpg", 
 				caption: "Ten city blocks", 
 				info: "~0.6 Miles <br> (320 ft per block)", 
 				correct: false},{
-				imgUrl: "images/imperial/length/mile/sniper.jpg", 
+				imgUrl: "images/imperial/length/mile3.jpg", 
 				caption: "Longest recorded sniper kill", 
 				info: "~1.53 Miles", 
 				correct: false},{
-				imgUrl: "images/imperial/length/mile/walking.jpeg", 
+				imgUrl: "images/imperial/length/mile4.jpg", 
 				caption: "Human walking speed per hour", 
 				info: "~3.1 Miles", 
 				correct: false}]
-		} /*mile*/
-	}, /*length*/
-	volume: {
-		fluidOunce: {
+		}
+	], /*length*/
+	volume: [{
 			unit: "Fluid Ounce",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},{
-				imgUrl: "images/other/placeholder2.jpg", 
+				imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*fluid ounce*/
-		cup: {
+		},{
 			unit: "Cup",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},{
-				imgUrl: "images/other/placeholder2.jpg", 
+				imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*cup*/
-		pint: {
+		},{
 			unit: "Pint",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},{
-				imgUrl: "images/other/placeholder2.jpg", 
+				imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*pint*/
-		quart: {
+		},{
 			unit: "Quart",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},{
-				imgUrl: "images/other/placeholder2.jpg", 
+				imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*quart*/
-		gallon: {
+		},{
 			unit: "Gallon",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},
-				{imgUrl: "images/other/placeholder2.jpg", 
+				{imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		} /*gallon*/
-	}, /*volume*/
-	mass: {
-		ounce: {
+		}
+	], /*volume*/
+	mass: [{
 			unit: "Ounce",
 			article: "an",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},
-				{imgUrl: "images/other/placeholder2.jpg", 
+				{imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*ounce*/
-		pound: {
+		},{
 			unit: "Pound",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},
-				{imgUrl: "images/other/placeholder2.jpg", 
+				{imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		}, /*pound*/
-		ton: {
+		},{
 			unit: "Ton",
 			article: "a",
 			data: [{
-				imgUrl: "images/other/placeholder1.jpg", 
+				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: true},
-				{imgUrl: "images/other/placeholder2.jpg", 
+				{imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder3.jpg", 
+				imgUrl: "images/misc/placeholder3.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
-				imgUrl: "images/other/placeholder4.jpg", 
+				imgUrl: "images/misc/placeholder4.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}
 			]
-		} /*ton*/
-	} /*mass*/
+		}
+	] /*mass*/
 } /*imperial*/
