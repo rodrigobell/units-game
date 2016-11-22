@@ -64,7 +64,7 @@ var imperial = {
 			article: "a",
 			data: [{
 				imgUrl: "images/imperial/length/mile1.jpg", 
-				caption: "Distance travelled at 60 mph in a minute", 
+				caption: "Distance travelled at 60 mph in a min", 
 				info: "~1.08 Miles", 
 				correct: true},{
 				imgUrl: "images/imperial/length/mile2.jpg", 
@@ -82,136 +82,35 @@ var imperial = {
 		}
 	], /*length*/
 	volume: [{
-			unit: "Fluid Ounce",
-			article: "a",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},{
-				imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}]
-		},{
-			unit: "Cup",
-			article: "a",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},{
-				imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}]
-		},{
-			unit: "Pint",
-			article: "a",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},{
-				imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}]
-		},{
-			unit: "Quart",
-			article: "a",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},{
-				imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}]
-		},{
 			unit: "Gallon",
 			article: "a",
 			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},
-				{imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
+				imgUrl: "images/imperial/volume/gallon1.jpg", 
+				caption: "Capacity of water cooler containter", 
+				info: "1 Gallon",
+				correct: true},{
+				imgUrl: "images/imperial/volume/gallon2.jpg", 
+				caption: "Capacity of US oil barrel", 
+				info: "42 Gallons",
 				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
+				imgUrl: "images/imperial/volume/gallon3.jpg", 
+				caption: "Water camels can drink in 13 min", 
+				info: "30 Gallons",
 				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
+				imgUrl: "images/imperial/volume/gallon4.jpg", 
+				caption: "Water elephants can in their trunk", 
+				info: "3.7 Gallons",
 				correct: false}]
 		}
 	], /*volume*/
 	mass: [{
-			unit: "Ounce",
-			article: "an",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},
-				{imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}]
-		},{
 			unit: "Pound",
 			article: "a",
 			data: [{
 				imgUrl: "images/misc/placeholder1.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
-				correct: true},
-				{imgUrl: "images/misc/placeholder2.jpg", 
+				correct: true},{imgUrl: "images/misc/placeholder2.jpg", 
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false},{
@@ -223,27 +122,6 @@ var imperial = {
 				caption: "Placeholder Text", 
 				info: "placeholder text",
 				correct: false}]
-		},{
-			unit: "Ton",
-			article: "a",
-			data: [{
-				imgUrl: "images/misc/placeholder1.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: true},
-				{imgUrl: "images/misc/placeholder2.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder3.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false},{
-				imgUrl: "images/misc/placeholder4.jpg", 
-				caption: "Placeholder Text", 
-				info: "placeholder text",
-				correct: false}
-			]
 		}
 	] /*mass*/
 } /*imperial*/
