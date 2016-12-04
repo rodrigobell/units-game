@@ -55,6 +55,7 @@ h1 {
 
 
 footer {
+	/*display: none;*/ 
 	position: fixed;
 	bottom: 0;
 	padding: 0;
@@ -110,6 +111,26 @@ footer {
 	transition: 0.2s;
 	font-family: var(--fontAll);
 }
+
+/*#metric {
+	display: none;
+}
+
+#mass {
+	display: none;
+}
+
+#divider {
+	display: none;
+}
+
+#volume {
+	display: none;
+}
+
+#time {
+	display: none;
+}*/
 
 .system.selected {
 	background: var(--colorThemeMid);
